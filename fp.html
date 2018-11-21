@@ -67,10 +67,10 @@
                 but doesn't ensures the identity of the other party, so it is important that you establish a secure channel with me and not with any other imposter.
                 This means you also need an authentication method to ensure my identity.
                 Using the fingerprints below you can verify if the public keys you downloaded are actually mine.<br />
-                Unfortunatelly the web is still not completly decentralized, and you still need to trust a third party.
                 What if you downloaded my alleged public key from an unsafe place and now someone is providing you a fake fingerprint to trick you in to thinking you got the right pubkey?!
                  <<"The fingerprint matches the one of the downloaded pubkey, therefore IT MUST BE SAFE!">>, the end-to-end channel would be private, but with the wrong recipient. That scenario would allow an attacker to pose as an impostor (impersonating me) or a MITM entity (while communcating with both of us).
                 That's why this website is browsable only using <a href="https://en.wikipedia.org/wiki/HTTPS">HTTPS</a>: there is a <a href="https://en.wikipedia.org/wiki/Public_key_infrastructure">certification authority</a> which is ensuring that the content of this page cannot be changed or tampered during transmission.
+                Unfortunatelly the web is still not completly decentralized, and you still need to trust a third party.
                 In this case you are trusting <a href="https://www.comodoca.com">Comodo CA</a>.<br />
                 As long as you trust that this website belongs to me, feel safe to use the following information to establish a secure connection with me.
                 <br />
@@ -129,7 +129,7 @@ sub   rsa4096 2013-09-09 [E] [expires: 2018-09-08]</code>
 
             <dt>SSH</dt>
             <dd>
-                Append this key to user's ~/.ssh/authorized_keys to allow me remote access
+                Wanna make your server faster or just provide me access? Append this key to ~/.ssh/authorized_keys
                 <div class="codebox">
                     <code>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC8SvJ8pwo2ZvWgBSlcXigEeK/tCaW5X1vepJdgVcOofJy6OT4Gf6xgVsC6YRU1mIQWr8CiADwvNBiKha8+X6DsPQWMRgz/jnm5nkElh2EnRqGLWpN9fnIHfWFvV4toYR/Ssp1jqjznDJ846BIUbjRO/NzQcFjro5E7w2vPFkPr7YdKvQ7wFzCi32D+aeVSv/pRRWNQCWRPMs46JBwxKXg3v47IPmHlAm+LtyR/BzfjLgWI7CXWJlNd6WUGFB5Qodw97oLDRBg4uGtyMioPHZFW0pi97IK/QRECDJzX1vORVz5R4433ifwZdHFIGyYWrrquqZWu63y1a8If/tUTDijnT5DgDI1CqWVfWZyneyv/f+3WAq8NI3jEjj2v8meNuVSJYo8xQ64Tqrh/n/yS1CJWFT50O3rkEirLkY6bPpn1jsTGhBaSGgGjMg73EO8SR2opIASq4uMtfG/hNpBp2gIQaw3lq9Hwo9EScIdHD+EMCad1ZdgX5527mMYJVJ0JVTcheNDt+wLCVxvA/qigEG1Ji8+ZDLs8JJrhPgIczYslDyJ0N+4eiUkh78r58zgg1Y0y9fHbXi+iriDuwluk0Db+QwDdZgK/OSoLDSShpiIxh6j2l3dgz5artASC6P78IZ8Ega8bdX9cSUtQfAT0wx016KXdCWj/6n9N45rRwOP9vQ==</code>
                 </div>
@@ -181,10 +181,10 @@ B8E6653C 39E64178 7E5945D9 F68F6567</code>
             <dt><a style="color:black; border-bottom: 0px;" href="https://tools.ietf.org/html/rfc6189">ZRTP</a></dt>
             <dd>
                 You can call me on crazybyte@<a href="https://ostel.co">ostel.co</a>.<br /><br />
-                We can verify the <a href="https://en.wikipedia.org/wiki/End-to-end_encryption">end-to-end encryption</a> comparing the symmertric key by the words which will appear on each VoIP clients.
-                To verify that I'm the one on the other side of the channel, just recognize my voice.
+                We can verify the <a href="https://en.wikipedia.org/wiki/End-to-end_encryption">end-to-end encryption</a> comparing the exchanged symmetric key with the words that appear on each VoIP clients.
+                To verify that I'm the one on the other side of the channel, you can just recognize my voice.
                 <br /><br />
-                The clients VoIP with ZRTP support that I use are: on Android <a href="https://github.com/r3gis3r/CSipSimple">CSipSimple</a>, and
+                The ZRTP compliant VoIP clients I use are: on Android <a href="https://github.com/r3gis3r/CSipSimple">CSipSimple</a>, and
                 on GNU/Linux <a href="https://www.linphone.org/">Linphone</a>.
 
 

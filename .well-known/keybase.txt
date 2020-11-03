@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/crazybyte
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://crazybyte.me
+  * I am crazybyte (https://keybase.io/crazybyte) on keybase.
+  * I have a public key ASAafxmFT8aeaQyYgtTaYtLfHNCBC8qXMs0CVrmlaCeRIgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01018b1f329bc4912b4221657e27a077b3bb59465aa13a8e953d4f0dcfa2c79dea210a",
+      "host": "keybase.io",
+      "kid": "01201a7f19854fc69e690c9882d4da62d2df1cd0810bca9732cd0256b9a5682791220a",
+      "uid": "c58cdaae871df28eb92228cd8b654119",
+      "username": "crazybyte"
+    },
+    "merkle_root": {
+      "ctime": 1604391019,
+      "hash": "460d61b4c2f70fc4c51d679648bddd32f5fff0ad2d746ac035afb78a1004e6f27137d50dea90707778c2efccb4c0130b6a050ca2090d819d20fddb354931a2cf",
+      "hash_meta": "07b992417f3d2550cc7990090343337ce696c4fca70b27ab5c0e47d45ac8fd19",
+      "seqno": 18003172
+    },
+    "service": {
+      "entropy": "mncaLEAC/WML38OGvVpI4N8t",
+      "hostname": "crazybyte.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.2"
+  },
+  "ctime": 1604391061,
+  "expire_in": 504576000,
+  "prev": "9c461fe4caee27a670c70076cac39881f887ebde4a85b3d60961aa496b4e98b0",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgGn8ZhU/GnmkMmILU2mLS3xzQgQvKlzLNAla5pWgnkSIKp3BheWxvYWTESpcCFMQgnEYf5MruJ6ZwxwB2ysOYgfiH695KhbPWCWGqSWtOmLDEIOD84Ikr2D4De5VpQqd6AnZzthwjWm2OwdIYKg2Us1LiAgHCo3NpZ8RA8uaNOu1H/yLr3lDBsn2+or7FPUpApy5/EEts1CCAPgz3YPczThqtkJ2hmL+3cdo8puaQ/2wC4LKubQLLM7ZmA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIOa8B7HroeALJnwkGUjVSqnUkqfQbhwxBRbUkwdTqbTPo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/crazybyte
+
+==================================================================

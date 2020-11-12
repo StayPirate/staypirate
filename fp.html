@@ -67,10 +67,7 @@
                 but doesn't ensures the identity of the other party, so it is important that you establish a secure channel with me and not with any other imposter.
                 This means you also need an authentication method to ensure my identity.
                 Using the fingerprints below you can verify if the public keys you downloaded are actually mine.<br />
-                What if you downloaded my alleged public key from an unsafe place and now someone is providing you a fake fingerprint to trick you in to thinking you got the right pubkey?!
-                 <<"The fingerprint matches the one of the downloaded pubkey, therefore IT MUST BE SAFE!">>, the end-to-end channel would be private, but with the wrong recipient. That scenario would allow an attacker to pose as an impostor (impersonating me) or a MITM entity (while communcating with both of us).
-                That's why this website is browsable only using <a href="https://en.wikipedia.org/wiki/HTTPS">HTTPS</a>: there is a <a href="https://en.wikipedia.org/wiki/Public_key_infrastructure">certification authority</a> which is ensuring that the content of this page cannot be changed or tampered during transmission.
-                Unfortunatelly the web is still not completly decentralized, and you still need to trust a third party.
+                This website is browsable only using <a href="https://en.wikipedia.org/wiki/HTTPS">HTTPS</a>. It means that there is a <a href="https://en.wikipedia.org/wiki/Public_key_infrastructure">certification authority</a> which is ensuring that the content of this page cannot be changed or tampered during transmission.
                 In this case you are trusting <a href="https://www.comodoca.com">Comodo CA</a>.<br />
                 As long as you trust that this website belongs to me, feel safe to use the following information to establish a secure connection with me.
                 <br />
@@ -82,6 +79,77 @@
         <br />
 
         <dl>
+            <dd class="clear"></dd>
+            <br />
+
+            <dt><a style="color:black; border-bottom: 0px;" href="https://gnupg.org/">OpenPGP</a></dt>
+            <dd>
+                Import my public key
+                <div class="codebox">
+                    <code>wget -qO - https://keybase.io/crazybyte/pgp_keys.asc | gpg --import -</code>
+                </div>
+                <br />Then check fingerprint
+                <div class="codebox">
+                    <code>gpg --fingerprint --fingerprint gianluca.gabrielli
+                        
+    pub   rsa2048 2020-04-04 [SC] [expires: 2025-04-03]
+          D78D 3FDC 2591 7EBA B52F  2362 6E17 38B8 2B60 B31D
+    uid           [ultimate] Gianluca Gabrielli <gianluca.gabrielli@suse.com>
+    uid           [ultimate] [jpeg image of size 18372]
+    sub   rsa2048 2020-04-04 [S] [expires: 2021-04-04]
+          8FFC 1E50 34F7 E237 051B  E063 C899 20D3 BC26 B313
+    sub   rsa2048 2020-04-04 [E] [expires: 2021-04-04]
+          2F4E 71B5 0686 63F9 CA9D  9A27 3287 62A6 D182 3FC3
+    sub   rsa2048 2020-04-04 [S] [expires: 2021-04-04]
+          8340 5047 2108 8D10 38F4  EEE4 DF62 E764 07AF A875
+    sub   rsa4096 2020-06-24 [S] [expires: 2021-06-24]
+          8A37 6CDA 82E5 4110 40B2  C4F4 A679 E92F 78CA 2FAA
+                        </code>
+                </div>
+            </dd>
+
+            <dd class="clear"></dd>
+            <br />
+
+            <dt>SSH</dt>
+            <dd>
+                Wanna make your server faster? Append this to ~/.ssh/authorized_keys
+                <div class="codebox">
+                    <code>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC8SvJ8pwo2ZvWgBSlcXigEeK/tCaW5X1vepJdgVcOofJy6OT4Gf6xgVsC6YRU1mIQWr8CiADwvNBiKha8+X6DsPQWMRgz/jnm5nkElh2EnRqGLWpN9fnIHfWFvV4toYR/Ssp1jqjznDJ846BIUbjRO/NzQcFjro5E7w2vPFkPr7YdKvQ7wFzCi32D+aeVSv/pRRWNQCWRPMs46JBwxKXg3v47IPmHlAm+LtyR/BzfjLgWI7CXWJlNd6WUGFB5Qodw97oLDRBg4uGtyMioPHZFW0pi97IK/QRECDJzX1vORVz5R4433ifwZdHFIGyYWrrquqZWu63y1a8If/tUTDijnT5DgDI1CqWVfWZyneyv/f+3WAq8NI3jEjj2v8meNuVSJYo8xQ64Tqrh/n/yS1CJWFT50O3rkEirLkY6bPpn1jsTGhBaSGgGjMg73EO8SR2opIASq4uMtfG/hNpBp2gIQaw3lq9Hwo9EScIdHD+EMCad1ZdgX5527mMYJVJ0JVTcheNDt+wLCVxvA/qigEG1Ji8+ZDLs8JJrhPgIczYslDyJ0N+4eiUkh78r58zgg1Y0y9fHbXi+iriDuwluk0Db+QwDdZgK/OSoLDSShpiIxh6j2l3dgz5artASC6P78IZ8Ega8bdX9cSUtQfAT0wx016KXdCWj/6n9N45rRwOP9vQ==</code>
+                </div>
+            </dd>
+
+            <dd class="clear"></dd>
+            <br />
+
+            <dt><a style="color:black; border-bottom: 0px;" href="https://conversations.im/omemo/">OMEMO</a></dt>
+            <dd>
+                Mobile <h2><span><a href="https://github.com/siacs/Conversations">Conversation</a></span></h2>
+                <div class="codebox">
+                    <code>89910a62 125aaf08 bb5af9bc 4ee92700
+649473c0 46e48c80 c57c5690 d3584b6c</code>
+                </div>
+            </dd>
+
+            <dd>
+                <br />
+                Laptop <h2><span><a href="https://dino.im/">Dino</a></span></h2>
+                <div class="codebox">
+                    <code>6AC47AB1 EA89E7E8 88F7E160 5F6637D0
+8EC5F28E 4DB5AE2A C4F4EB7D 049DB67F</code>
+                </div>
+            </dd>
+
+            <dd class="clear"></dd>
+            <br />
+
+            <dt><a style="color:black; border-bottom: 0px;" href="https://ring.cx">Ring.cx</a></dt>
+            <dd>
+                <div class="codebox">
+                    <code>crazybyte</code>
+                </div>
+            </dd>
+
             <dd class="clear"></dd>
 
             <dt>Payment</dt>
@@ -99,104 +167,6 @@
                 <a style="border-bottom: 0px;" href="https://z.cash"><img src="images/zec.png" alt="Zcash" id="cryptocurrency" /></a> Zcash
                 <div class="codebox">
                     <code>t1ads8hZQ1r4BkLVrYw8Ey5ZjWQzLTRLmZU</code>
-                </div>
-            </dd>
-
-            <dd class="clear"></dd>
-            <br />
-<!---
-            <dt><a style="color:black; border-bottom: 0px;" href="https://gnupg.org/">OpenPGP</a></dt>
-            <dd>
-                Import my public key <b style="color: red">EXPIRED</b>
-                <div class="codebox">
-                    <code>#gpg --keyserver pgp.mit.edu --recv-keys <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x0E07A068E9F02F91">0xE9F02F91</a></code>
-                </div>
-                <br />Then check fingerprint
-                <div class="codebox">
-                    <code>#gpg --fingerprint 0xE9F02F91
-pub   rsa4096 2013-09-09 [SC] [expires: 2018-09-08]
-      <b>27B0 013E 95F8 644D 35A5  93B0 0E07 A068 E9F0 2F91</b>
-uid           [ultimate] Gianluca Gabrielli <sprite.lol@gmail.com>
-uid           [ultimate] Gianluca Gabrielli <gianluca.gabrielli@autistici.org>
-uid           [ultimate] Gianluca Gabrielli <gianluca.gabrielli@studenti.unicam.it>
-uid           [ultimate] [jpeg image of size 2323]
-sub   rsa4096 2013-09-09 [E] [expires: 2018-09-08]</code>
-                </div>
-            </dd>
-
-            <dd class="clear"></dd>
-            <br />
---->
-            <dt>SSH</dt>
-            <dd>
-                Wanna make your server faster or just provide me access? Append this key to ~/.ssh/authorized_keys
-                <div class="codebox">
-                    <code>ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC8SvJ8pwo2ZvWgBSlcXigEeK/tCaW5X1vepJdgVcOofJy6OT4Gf6xgVsC6YRU1mIQWr8CiADwvNBiKha8+X6DsPQWMRgz/jnm5nkElh2EnRqGLWpN9fnIHfWFvV4toYR/Ssp1jqjznDJ846BIUbjRO/NzQcFjro5E7w2vPFkPr7YdKvQ7wFzCi32D+aeVSv/pRRWNQCWRPMs46JBwxKXg3v47IPmHlAm+LtyR/BzfjLgWI7CXWJlNd6WUGFB5Qodw97oLDRBg4uGtyMioPHZFW0pi97IK/QRECDJzX1vORVz5R4433ifwZdHFIGyYWrrquqZWu63y1a8If/tUTDijnT5DgDI1CqWVfWZyneyv/f+3WAq8NI3jEjj2v8meNuVSJYo8xQ64Tqrh/n/yS1CJWFT50O3rkEirLkY6bPpn1jsTGhBaSGgGjMg73EO8SR2opIASq4uMtfG/hNpBp2gIQaw3lq9Hwo9EScIdHD+EMCad1ZdgX5527mMYJVJ0JVTcheNDt+wLCVxvA/qigEG1Ji8+ZDLs8JJrhPgIczYslDyJ0N+4eiUkh78r58zgg1Y0y9fHbXi+iriDuwluk0Db+QwDdZgK/OSoLDSShpiIxh6j2l3dgz5artASC6P78IZ8Ega8bdX9cSUtQfAT0wx016KXdCWj/6n9N45rRwOP9vQ==</code>
-                </div>
-            </dd>
-
-            <dd class="clear"></dd>
-            <br />
-
-            <dt><a style="color:black; border-bottom: 0px;" href="https://otr.cypherpunks.ca/">OTR</a></dt>
-            <dd>
-                Android <h2><span><a href="https://github.com/siacs/Conversations">Conversation</a></span></h2>
-                <div class="codebox">
-                    <code>D17512BC CEEDEC44 26A45903 85252C5D B8289DA7</code>
-                </div>
-            </dd>
-
-            <dd>
-                <br />
-                Athena <h2><span><a href="https://gajim.org">Gajim</a></span></h2>
-                <div class="codebox">
-                    <code>035933ED B0275755 CB8FFDA3 AC8D710C 10A0CD8E</code>
-                </div>
-            </dd>
-
-            <dd class="clear"></dd>
-            <br />
-
-            <dt><a style="color:black; border-bottom: 0px;" href="https://conversations.im/omemo/">OMEMO</a></dt>
-            <dd>
-                Android <h2><span><a href="https://github.com/siacs/Conversations">Conversation</a></span></h2>
-                <div class="codebox">
-                    <code>1E93ABEF EFAAB3A4 74A9EF54 AF9B26E3
-B8C15071 17484D8E B7515884 10DF6772</code>
-                </div>
-            </dd>
-
-            <dd>
-                <br />
-                Athena <h2><span><a href="https://gajim.org">Gajim</a></span></h2>
-                <div class="codebox">
-                    <code>3689698B DA72C1E1 AC5A083A 1F67E316
-B8E6653C 39E64178 7E5945D9 F68F6567</code>
-                </div>
-            </dd>
-
-            <dd class="clear"></dd>
-            <br />
-
-            <dt><a style="color:black; border-bottom: 0px;" href="https://tools.ietf.org/html/rfc6189">ZRTP</a></dt>
-            <dd>
-                You can call me on crazybyte@<a href="https://ostel.co">ostel.co</a>.<br /><br />
-                We can verify the <a href="https://en.wikipedia.org/wiki/End-to-end_encryption">end-to-end encryption</a> comparing the exchanged symmetric key with the words that appear on each VoIP clients.
-                To verify that I'm the one on the other side of the channel, you can just recognize my voice.
-                <br /><br />
-                The ZRTP compliant VoIP clients I use are: on Android <a href="https://github.com/r3gis3r/CSipSimple">CSipSimple</a>, and
-                on GNU/Linux <a href="https://www.linphone.org/">Linphone</a>.
-
-
-            </dd>
-
-            <dd class="clear"></dd>
-            <br />
-
-            <dt><a style="color:black; border-bottom: 0px;" href="https://ring.cx">Ring.cx</a></dt>
-            <dd>
-                <div class="codebox">
-                    <code>crazybyte</code>
                 </div>
             </dd>
 

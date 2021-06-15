@@ -1,0 +1,23 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Gianluca Gabrielli
+N:Gabrielli;Gianluca;;;
+NICKNAME:Crazybyte
+EMAIL;TYPE=INTERNET;TYPE=HOME:crazybyte@protonmail.com
+EMAIL;TYPE=INTERNET;TYPE=WORK:gianluca.gabrielli@suse.com
+item1.TEL:+39 3295745402
+item1.X-ABLabel:Private
+item3.TEL:+39 342 9988576
+item3.X-ABLabel:Work
+item4.TEL:+39 02 3045 6031
+item4.X-ABLabel:Work
+item5.ORG:SUSE
+item5.X-ABLabel:
+item6.TITLE:Security Engineer
+item6.X-ABLabel:
+item7.URL:https\://gianlu.ca
+item7.X-ABLabel:Home Page
+PHOTO:https://lh3.googleusercontent.com/-vMwdfNUjL_E/XxgAhAiiraI/AAAAAAAAAA
+ A/gtTywNlSCdcsg-qNxC1At-qGi5b7aeJPgCOQCEAE/photo.jpg
+CATEGORIES:myContacts,starred
+END:VCARD
